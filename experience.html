@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experience</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: "Segoe UI", sans-serif;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(120deg, #e9edf3, #f4f6fa);
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            width: 220px;
+            background: #2c3e50;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        nav h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            margin: 15px 0;
+            padding: 10px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background: #34495e;
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        main {
+            flex: 1;
+            padding: 30px;
+        }
+
+        header {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin: 0;
+            color: #2c3e50;
+        }
+
+        header p {
+            margin-top: 8px;
+            color: #666;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        section h2 {
+            margin-top: 0;
+            color: #34495e;
+            margin-bottom: 20px;
+        }
+
+        /* ===== WORK EXPERIENCE ===== */
+        .experience-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+        }
+
+        .exp-box {
+            background: #f6f8fb;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .exp-box h4 {
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        /* ===== PROJECT POPUP ===== */
+        .project-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .project-box {
+            flex: 1;
+            background: #f6f8fb;
+            padding: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+        }
+
+        /* ===== CERTIFICATE TABLE ===== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background: #2c3e50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background: #f2f4f7;
+        }
+
+        .view-btn {
+            padding: 6px 12px;
+            background: #3498db;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ===== NAVIGATION ===== -->
+<nav>
+    <h2>MENU</h2>
+    <a href="index.html">Home</a>
+    <a href="#work">Work Experience</a>
+    <a href="#projects">Notable Projects</a>
+    <a href="#certificates">Certificates & Achievements</a>
+</nav>
+
+<!-- ===== MAIN ===== -->
+<main>
+
+    <!-- ===== HEADER / HOME ===== -->
+    <header id="home" class="page-header">
+        <h1>Experience</h1>
+        <p>
+            A comprehensive overview of my professional exposure, academic projects,
+            and achievements developed throughout my learning journey.
+        </p>
+    </header>
+
+    <!-- ===== WORK EXPERIENCE (TABLE) ===== -->
+    <section id="work">
+        <h2>Work Experience</h2>
+
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Position</th>
+                <th>Institution / Company</th>
+                <th>Achievement</th>
+            </tr>
+            <tr>
+                <td>2025<br>(28July-19Sept)</td>
+                <td>Intern</td>
+                <td>Chancellory Office (UTHM)</td>
+                <td>create booking system within two months</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ===== NOTABLE PROJECTS ===== -->
+    <section id="projects">
+        <h2>Notable Projects</h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <h4>CREATING ROOM BOOKING SYSTEM</h4>
+                <p>INTERFACE</p><br>
+		<a href="website.png" class="view-btn">View</a></td><br>
+                <p>ADMIN INTERFACE</p><br>
+		<a href="admin.png" class="view-btn">View</a></td>
+		
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CERTIFICATES ===== -->
+    <section id="certificates">
+        <h2>Certificates & Achievements</h2>
+
+        <table>
+            <tr>
+                <th>No.</th>
+                <th>Certificate Title</th>
+                <th>Description</th>
+                <th>Year</th>
+                <th>View</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>DEAN'S AWARD </td>
+                <td>Gained dean's award in semester 4</td>
+                <td>2025</td>
+                <td><a href="cert1.jpeg" class="view-btn">View</a></td>
+            </tr>
+	   <tr>
+                <td>2</td>
+                <td>CO-CURRICULUM CERTIFICATE</td>
+                <td>GRED B IN CO-CURRICULUM</td>
+                <td>2022</td>
+                <td><a href="cert2.jpeg" class="view-btn">View</a></td>
+            </tr>
+	   <tr>
+                <td>3</td>
+                <td>Sijil Pelantikan</td>
+                <td>Pengawas Pusat Sumber</td>
+                <td>2022/2023</td>
+                <td><a href="cert3.jpeg" class="view-btn">View</a></td>
+            </tr>
+	    <tr>
+                <td>4</td>
+                <td>Sijil Penyertaan</td>
+                <td>Bicara Buku Johor</td>
+                <td>2022</td>
+                <td><a href="cert8.jpeg" class="view-btn">View</a></td>
+	    <tr>
+                <td>5</td>
+                <td>Sijil Penyertaan</td>
+                <td>Pengawas Pusat Sumber</td>
+                <td>2019</td>
+                <td><a href="cert4.jpeg" class="view-btn">View</a></td>
+            </tr>
+
+	    <tr>
+                <td>6</td>
+                <td>Watikah Pelantikan </td>
+                <td>Pengawas Pusat Sumber</td>
+                <td>2016</td>
+                <td><a href="cert5.jpeg" class="view-btn">View</a></td>
+            </tr>
+	   <tr>
+                <td>7</td>
+                <td>Watikah Pelantikan</td>
+                <td>Ketua Kelas</td>
+                <td>2015</td>
+                <td><a href="cert6.jpeg" class="view-btn">View</a></td>
+            </tr>
+ 	    <tr>
+                <td>8</td>
+                <td>Sijil Penyertaan</td>
+                <td>Kursus Kepimpinan SK PINTAS RAYA</td>
+                <td>2015</td>
+                <td><a href="cert7.jpeg" class="view-btn">View</a></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        Copyright © 2025 RASHNAZIEM — All Rights Reserved.
+    </footer>
+
+</main>
+
+</body>
+</html>

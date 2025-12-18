@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Family</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --brown:#7a4a2e;
+      --dark-brown:#4e2e1f;
+      --nude:#f3e6d8;
+      --soft-nude:#faf6f1;
+    }
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins', sans-serif;
+    }
+
+    body{
+      background:var(--soft-nude);
+      color:var(--dark-brown);
+      line-height:1.7;
+    }
+
+    /* ===== HEADER ===== */
+    header{
+      background:var(--brown);
+      padding:20px 60px;
+      position:sticky;
+      top:0;
+      z-index:100;
+      box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    nav h1{
+      font-family:'Playfair Display', serif;
+      color:var(--nude);
+      letter-spacing:2px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:30px;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:var(--nude);
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#fff;
+      border-bottom:2px solid #fff;
+      padding-bottom:4px;
+    }
+
+    section{
+      padding:80px 60px;
+    }
+
+    .section-title{
+      font-family:'Playfair Display', serif;
+      font-size:2.2rem;
+      margin-bottom:40px;
+      text-align:center;
+      color:var(--brown);
+    }
+
+    /* ===== FAMILY HIGHLIGHT (SLIDESHOW) ===== */
+    .slideshow{
+      position:relative;
+      max-width:320px;
+      height:420px;
+      margin:0 auto;
+      overflow:hidden;
+    }
+
+    .slide{
+      position:absolute;
+      inset:0;
+      opacity:0;
+      transition:opacity 1s ease-in-out;
+    }
+
+    .slide.active{
+      opacity:1;
+    }
+
+    .slide-box{
+      position:relative;
+      width:100%;
+      height:100%;
+      border-radius:16px;
+      overflow:hidden;
+    }
+
+    .slide-box::before{
+      content:"";
+      position:absolute;
+      inset:18px;
+      background:var(--nude);
+      border-radius:16px;
+      z-index:1;
+    }
+
+    .slide-box img{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:16px;
+      z-index:2;
+    }
+
+
+
+    /* ===== FAMILY MEMBERS ===== */
+
+    .members{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+      gap:40px;
+    }
+
+    .member-card{
+      background:var(--nude);
+      border-radius:18px;
+      padding:25px;
+      text-align:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.1);
+      transition:0.4s;
+      animation:fadeUp 1.2s ease forwards;
+    }
+
+    .member-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .member-card img{
+      width:140px;
+      height:180px;
+      object-fit:cover;
+      border-radius:12px;
+      margin-bottom:20px;
+      border:4px solid var(--brown);
+    }
+
+    .member-card h3{
+      font-family:'Playfair Display', serif;
+      color:var(--brown);
+      margin-bottom:10px;
+    }
+
+    .member-card p{
+      font-size:0.95rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      background:var(--dark-brown);
+      color:var(--nude);
+      text-align:center;
+      padding:30px;
+      margin-top:60px;
+    }
+
+    footer span{
+      font-family:'Playfair Display', serif;
+      letter-spacing:1px;
+    }
+
+    /* ===== ANIMATION ===== */
+    @keyframes fadeUp{
+      from{
+        opacity:0;
+        transform:translateY(40px);
+      }
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+      header{
+        padding:20px 30px;
+      }
+      section{
+        padding:60px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <h1>My Family</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- FAMILY GALLERY -->
+  <section id="home">
+    <h2 class="section-title">Our Family Raya Moments</h2>
+    <div class="slideshow">
+      <div class="slide active">
+        <div class="slide-box"><img src="raya1.jpeg" alt="Family"></div>
+      </div>
+      <div class="slide">
+        <div class="slide-box"><img src="raya2.jpeg" alt="Family"></div>
+      </div>
+      <div class="slide">
+        <div class="slide-box"><img src="raya3.jpeg" alt="Family"></div>
+      </div>
+      <div class="slide">
+        <div class="slide-box"><img src="raya4.jpeg" alt="Family"></div>
+      </div>
+      <div class="slide">
+        <div class="slide-box"><img src="raya5.jpeg" alt="Family"></div>
+      </div>
+ <div class="slide">
+        <div class="slide-box"><img src="raya6.jpeg" alt="Family"></div>
+      </div>
+
+    </div>
+
+    <script>
+      let slides = document.querySelectorAll('.slide');
+      let index = 0;
+      setInterval(() => {
+        slides[index].classList.remove('active');
+        index = (index + 1) % slides.length;
+        slides[index].classList.add('active');
+      }, 3500);
+    </script>
+  </section>
+
+  <!-- FAMILY MEMBERS -->
+  <section id="about">
+    <h2 class="section-title">Family Members</h2>
+    <div class="members">
+      <div class="member-card">
+        <img src="ayah.jpeg" alt="Member">
+        <h3>Father</h3>
+        <p>A strong and dedicated figure who leads the family with wisdom and responsibility.</p>
+      </div>
+      <div class="member-card">
+        <img src="mama.jpeg" alt="Member">
+        <h3>Mother</h3>
+        <p>The heart of the family, nurturing everyone with patience, love, and grace.</p>
+      </div>
+      <div class="member-card">
+        <img src="abang.jpeg" alt="Member">
+        <h3>First Child</h3>
+        <p>A role model who carries leadership and sets an example for the siblings.</p>
+      </div>
+      <div class="member-card">
+        <img src="adan.jpeg" alt="Member">
+        <h3>Second Child</h3>
+        <p>Energetic, creative, and always bringing joy into the household.</p>
+      </div>
+      <div class="member-card">
+        <img src="zack.jpeg" alt="Member">
+        <h3>Youngest</h3>
+        <p>The youngest soul who completes the family with innocence and laughter.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Copyright © 2025 RASHNAZIEM — All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
+

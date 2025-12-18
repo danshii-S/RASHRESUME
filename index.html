@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rash | Home</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+    <script>
+        function updateDate() {
+            const now = new Date();
+            const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            document.getElementById("date-info").innerHTML =
+                days[now.getDay()] + " | " + now.toLocaleDateString();
+        }
+        setInterval(updateDate, 1000);
+    </script>
+</head>
+
+
+<body>
+
+    <div class="gif-background"></div>
+
+
+    <header class="top-nav">
+        <h2>RASH-WEBSITE</h2>
+
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="family.html">Family</a>
+	    <a href="contact.html">Contact</a>
+
+        </nav>
+    </header>
+
+	<!-- SECTION NAVIGATION -->
+<nav class="section-nav">
+    <a href="#hero">🏠 Home</a>
+    <a href="#artists">🎵 Artists</a>
+    <a href="#skills">🎯 Skills</a>
+    <a href="#inspiration">💡 Inspiration</a>
+</nav>
+
+	
+
+	<marquee scrollamount="4" class="marquee">
+    <span class="crimson-text">Welcome to Adan's Personal Website</span>
+    &nbsp;•&nbsp;
+    <span class="blue-text">Have fun reading</span>
+    &nbsp;•&nbsp;
+    <span class="green-text">Feel free to contact me if interested</span>
+</marquee>
+
+
+
+
+  <!-- HERO SECTION -->
+<section id="hero" class="content-wrapper">
+    <div class="hero">
+
+        <div class="image-box">
+            <img src="rashprofile.jpg" alt="Rash profile">
+        </div>
+
+        <div class="hero-text">
+            <h1>Hi, my name is <span class="crimson">RASHDAN</span></h1>
+
+            <p class="intro">
+                Welcome to my personal website. This platform presents an overview of my background,
+                achievements, skills, and professional experience. It is designed to provide a clear
+                and concise introduction to who I am and the work I have accomplished.
+                <br><br>
+                Thank you for your interest.
+            </p>
+
+            <div class="social-icons">
+                <a href="https://web.facebook.com/muhammad.rashdan.14/">FB</a>
+                <a href="https://www.instagram.com/sh_191i/#">IG</a>
+            </div>
+
+            <a href="about.html" class="hire-btn">About me</a>
+        </div>
+
+    </div>
+	
+</section>
+
+<!-- TOP FAVOURITE ARTISTS -->
+<section id="artists" class="artist-section">
+    <h1 class="section-title crimson">Top Favourite Artists</h1>
+
+    <div class="artist-container">
+        <div class="artist-box">
+            <img src="wangyibo.jpg" alt="Artist 1">
+            <h2>王一博<br>WANG YIBO</h2> 
+		<p>A multi-talented Chinese actor, singer, dancer, and professional motorcycle racer, celebrated for his versatility and global influence.</p>
+        </div>
+
+        <div class="artist-box">
+            <img src="dilraba.png" alt="Artist 2">
+            <h2>دىلرەبا دىلمۇرات<br>DILRABA DILMURAT</h2>
+            <p>A Chinese actress, singer, and model of Uyghur descent, widely admired for her beauty, versatility, and leading roles in popular dramas..</p>
+        </div>
+
+        <div class="artist-box">
+            <img src="cardib.jpg" alt="Artist 3">
+            <h2>CARDI B</h2>
+            <p>a Grammy-winning American rapper, songwriter, and media personality known for her bold style, chart-topping hits, and outspoken personality..</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills" class="content-wrapper extra-box">
+    <h2 class="crimson">Skills</h2>
+    <p>Skills that i gained and pacianate .</p>
+
+    <div class="skill">
+        <span>Records Management</span>
+        <div class="skill-bar">
+            <div class="skill-level html"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Multimedia editing</span>
+        <div class="skill-bar">
+            <div class="skill-level css"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>HTML</span>
+        <div class="skill-bar">
+            <div class="skill-level js"></div>
+        </div>
+    </div>
+
+    <div class="skill">
+        <span>Math</span>
+        <div class="skill-bar">
+            <div class="skill-level python"></div>
+        </div>
+    </div>
+</section>
+
+<!-- INSPIRATION -->
+<section id="inspiration" class="content-wrapper extra-box">
+    <h2 class="crimson">My Inspirations</h2>
+    <p>
+        <b>WABI SABI</b><br><br>
+        "Finding Beauty in simplicity, peace in the imperfect, the impermanent,
+        and the incomplete."
+        <br><br>
+        Inspired me to think positive in life.
+    </p>
+</section>
+
+
+<audio autoplay loop>
+    <source src="flute.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+    <!-- FOOTER BLOCK -->
+    <footer>
+        <p>Copyright © 2025 RASHNAZIEM — All Rights Reserved.</p>
+        <p id="date-info"></p>
+    </footer>
+
+</body>
+</html>

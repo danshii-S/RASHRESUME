@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>About Me</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth}
+
+body{
+  font-family:"Segoe UI",sans-serif;
+  background:#f1f1f1;
+  color:#222;
+  padding-top:110px; /* ruang untuk header fixed */
+}
+
+/* ===== HEADER ===== */
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  background:#2c3e50;
+  color:white;
+  padding:20px;
+  text-align:center;
+  z-index:1000;
+  animation:headerFade 1s ease;
+}
+
+header h1{
+  font-size:34px;
+  font-weight:600;
+  animation:slideDown .9s ease;
+}
+
+.subtitle{
+  font-size:15px;
+  opacity:.85;
+  margin-top:4px;
+}
+
+/* HEADER ANIMATION */
+@keyframes slideDown{
+  from{opacity:0;transform:translateY(-20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+@keyframes headerFade{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+/* ===== LAYOUT ===== */
+.container{display:flex}
+
+/* ===== NAV ===== */
+nav{
+  width:240px;
+  background:#ffffff;
+  padding:25px;
+  position:fixed;
+  top:120px; /* ikut bawah header */
+  left:20px;
+  border-radius:12px;
+  box-shadow:0 6px 15px rgba(0,0,0,.15)
+}
+
+nav ul{list-style:none}
+nav ul li{margin-bottom:18px}
+
+nav ul li a{
+  text-decoration:none;
+  color:#2c3e50;
+  font-weight:600;
+  font-size:16px;
+  transition:.3s;
+}
+
+nav ul li a:hover{
+  color:#4a90e2;
+}
+
+/* ===== CONTENT ===== */
+.main-content{
+  margin-left:300px;
+  width:calc(100% - 300px);
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+/* ===== ARTICLE ===== */
+article{
+  width:80%;
+  background:white;
+  padding:35px;
+  margin:30px 0;
+  border-radius:14px;
+  box-shadow:0 8px 18px rgba(0,0,0,.12);
+  animation:fadeUp .8s ease;
+}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+article h1{
+  margin-bottom:20px;
+  color:#2c3e50;
+}
+
+/* ===== ABOUT ===== */
+.about-flex{
+  display:flex;
+  gap:30px;
+  align-items:center;
+}
+
+.about-flex img{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border-radius:10px;
+}
+
+/* ===== MINI INFO ===== */
+.mini-box-container{
+  display:flex;
+  gap:15px;
+  margin-top:25px;
+}
+
+.mini-box{
+  background:#ecf0f1;
+  padding:12px;
+  width:100px;
+  text-align:center;
+  border-radius:8px;
+  font-size:14px;
+  font-weight:600;
+}
+
+/* ===== HOBBY ===== */
+.hobby-box-container{
+  display:flex;
+  gap:20px;
+  margin-top:15px;
+}
+
+.hobby-box{
+  background:#ecf0f1;
+  padding:18px;
+  width:140px;
+  text-align:center;
+  border-radius:12px;
+  font-weight:600;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#2c3e50;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:40px;
+}
+</style>
+</head>
+
+<body background="backwhite.gif">
+
+
+<header>
+  <h1>MUHAMMAD RASHDAN</h1>
+  <div class="subtitle">Information Management Student | BRAVEHEART</div>
+</header>
+
+<div class="container">
+
+<nav>
+<ul>
+<li><a href="#about">👤 About Me</a></li>
+<li><a href="#location">📍 Location</a></li>
+<li><a href="#hobby">🎨 Hobbies & Interests</a></li>
+<li><a href="#family">👨‍👩‍👧 Family</a></li>
+<li><a href="index.html">🏠 Home</a></li>
+</ul>
+</nav>
+
+<div class="main-content">
+
+<article id="about">
+<h1>About Me</h1>
+
+<div class="about-flex">
+<img src="rash.jpeg" alt="My Photo">
+
+<div>
+<h3>Personal Info</h3>
+<p>
+<b>Name:</b> Muhammad Rashdan bin Syahriel Naziem<br>
+<b>Birth Date:</b> 19/1/2005<br>
+<b>Location:</b> Batu Pahat, Johor<br>
+<b>Education:</b> UiTM Segamat
+</p><br>
+
+<h3>Personality</h3>
+<p>Independent, cheerful, resilient, and leadership-oriented.</p>
+</div>
+</div>
+
+<div class="mini-box-container">
+<div class="mini-box">Age<br>20</div>
+<div class="mini-box">Course<br>IM</div>
+<div class="mini-box">Sem<br>5</div>
+<div class="mini-box">Status<br>Student</div>
+</div>
+</article>
+
+<article id="location">
+<h1>Location</h1>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14434.753862227986!2d103.0680378!3d1.8536169!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d0593272f71b3f%3A0x3e180d568c5052b1!2s31%2C%20Jalan%20Universiti%2020%2C%2086400%20Parit%20Raja%2C%20Johor%20Darul%20Ta&#39;zim!5e1!3m2!1sen!2smy!4v1765784745676!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<p>Parit Raja, Batu Pahat, Johor.</p>
+</article>
+
+<article id="hobby">
+<h1>Hobbies & Interests</h1>
+
+<div class="hobby-box-container">
+<div class="hobby-box">🎬<br>Movies & Dramas</br><font color="#61564a" <p> Enjoy watching any genre and cultures type of movies and dramas</p></div></font>
+<div class="hobby-box">🎨<br>Arts</br><font color="#61564a" <p> Draw random things</p></div></font>
+<div class="hobby-box">🎧<br>Music</br><font color="#61564a" <p> Listen to any genre and languages</p></div></font>
+<div class="hobby-box">📷<br>Picture</br><font color="#61564a" <p> Enjoy captures each moment and good scenery</p></div></font>
+<div class="hobby-box">✈️<br>Travelling</br><font color="#61564a" <p> Love to go a new place and explore new things</p></div></font>
+<div class="hobby-box">🛒<br>Shopping</br><font color="#61564a" <p> Love to go shopping (sorry madnoor) I gen z</p></div></font>
+
+</div>
+</article>
+
+<article id="family">
+<h1>Family Background</h1>
+<p>My family have 5 members that consist my father, mother, big brother , me and my little bro.</p>
+</article>
+
+</div>
+</div>
+
+<footer>
+Copyright © 2025 RASHNAZIEM — All Rights Reserved.
+</footer>
+
+</body>
+</html>
+

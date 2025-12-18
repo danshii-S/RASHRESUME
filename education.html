@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Education Journey</title>
+
+<style>
+    body{
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f4f6f8;
+    }
+
+    /* HEADER */
+    header{
+        background-color: #1f2937;
+        padding: 20px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header h1{
+        color: #ffffff;
+        margin: 0;
+        font-size: 22px;
+        letter-spacing: 1px;
+    }
+
+    nav a{
+        text-decoration: none;
+        color: #ffffff;
+        margin-left: 15px;
+        padding: 8px 14px;
+        border: 1px solid #ffffff;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    nav a:hover{
+        background-color: #ffffff;
+        color: #1f2937;
+    }
+
+    /* PAGE TITLE */
+    .page-title{
+        text-align: center;
+        margin: 40px 0 20px 0;
+    }
+
+    .page-title h2{
+        font-size: 32px;
+        color: #111827;
+        margin: 0;
+    }
+
+    /* TIMETABLE (OUTSIDE BOX) */
+    .timetable-section{
+        width: 95%;
+        max-width: 1200px;
+        margin: 30px auto 50px auto;
+    }
+
+    .timetable-section h3{
+        text-align: center;
+        color: #1f2937;
+        margin-bottom: 20px;
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 100%;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    caption{
+        caption-side: bottom;
+        padding: 10px;
+        font-size: 14px;
+        color: #374151;
+    }
+
+    th, td{
+        border: 1px solid #d1d5db;
+        padding: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    thead th{
+        background-color: #1f2937;
+        color: #ffffff;
+    }
+
+    tbody th{
+        background-color: #e5e7eb;
+        color: #111827;
+    }
+
+    .imd313{
+    background-color: #e0f2fe;
+    font-weight: bold;
+}
+
+.imd317{
+    background-color: #dcfce7;
+    font-weight: bold;
+}
+
+.imd316{
+    background-color: #fef3c7;
+    font-weight: bold;
+}
+
+.imd318{
+    background-color: #99ffcc;
+    font-weight: bold;
+}
+
+.freetime{
+    background-color: #b3d9ff;
+    font-weight: bold;
+}
+
+.rest{
+    background-color: #b3ecff;
+    font-weight: bold;
+}
+
+.imd310{
+    background-color: #e6b3cc;
+    font-weight: bold;
+}
+
+	
+
+    /* CONTENT BOX */
+    .content-wrapper{
+        display: flex;
+        justify-content: center;
+    }
+
+    .education-box{
+        background-color: #ffffff;
+        width: 75%;
+        max-width: 1000px;
+        padding: 30px;
+        border-radius: 6px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        margin-bottom: 60px;
+    }
+
+    .education-box h3{
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 10px;
+        color: #1f2937;
+        margin-top: 30px;
+    }
+
+    .education-box p{
+        line-height: 1.8;
+        color: #374151;
+        text-align: justify;
+    }
+
+ .education-box h4{
+        border-bottom: 2px solid #e5e7eb;
+        padding-bottom: 10px;
+        color: #1f2937;
+        margin-top: 30px;
+    }
+
+    .education-box p{
+        line-height: 1.8;
+        color: #374151;
+        text-align: justify;
+    }
+
+
+    /* FOOTER */
+    footer{
+        background-color: #1f2937;
+        color: #ffffff;
+        text-align: center;
+        padding: 15px;
+        font-size: 14px;
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Education</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="experience.html">Experience</a>
+        <a href="family.html">Family</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="page-title">
+    <h2>My Education Journey</h2>
+</div>
+
+<!-- TIMETABLE OUTSIDE EDUCATION BOX -->
+<div class="timetable-section">
+    <h3>JSI1105F TIMETABLE</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Day / Time</th>
+                <th>8.00 am</th>
+                <th>9.00 am</th>
+                <th>10.00 am</th>
+                <th>11.00 am</th>
+                <th>12.00 pm</th>
+                <th>1.00 pm</th>
+                <th>2.00 pm</th>
+                <th>3.00 pm</th>
+                <th>4.00 pm</th>
+                <th>5.00 pm</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <th>ISNIN</th>
+		<td colspan="3" class="imd317">IMD 317</td>
+		<td colspan="2" class="imd313">IMD 313</td>
+                <td class="freetime">FREE TIME</td>
+		<td colspan="4" class="imd316">IMD 316</td>
+
+            </tr>
+
+            <tr>
+                <th>SELASA</th>
+                <td colspan="10" class="rest">REST DAY</td>
+            </tr>
+
+            <tr>
+                <th>RABU</th>
+		 <td colspan="3" class="imd313">IMD 313</td>
+		 <td colspan="3" class="imd317">IMD317</td>
+		<td colspan="4" class="freetime"> FREE TIME</td>
+
+            </tr>
+
+            <tr>
+                <th>KHAMIS</th>
+		 <td colspan="6" class="freetime">FREE TIME</td>
+		 <td colspan="4" class="imd318">IMD318</td>
+
+
+            </tr>
+
+            <tr>
+                <th>JUMAAT</th>
+		<td colspan="3" class="freetime">FREE TIME</td>
+		<td colspan="2" class="imd310">IMD310</td>
+                <td colspan="5" class="freetime">FREE TIME</td>
+            </tr>
+        </tbody>
+
+        <caption>TimeTable Saya</caption>
+    </table>
+</div>
+
+<!-- EDUCATION CONTENT BOX -->
+<div class="content-wrapper">
+<div class="education-box">
+
+    <h3>Primary School</h3>
+    <p>
+ 	I went to SK PINTAS RAYA from grade 1 to grade 4
+    </p>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.7004407849636!2d103.0691349744711!3d1.8477325597743044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d0594ee007a0b7%3A0xa925f3b4b2741855!2sSekolah%20Kebangsaan%20Pintas%20Raya!5e1!3m2!1sen!2smy!4v1765805241257!5m2!1sen!2smy" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	<img src="pintasraya.png" alt="pintasraya" width="400" height="350">
+
+ <p>
+ 	I went to Sekolah Rendah Islam At-Tahfiz Parit Raja from grade 5 to grade 6<br>
+	<b>UPKK:</b>7A<br>
+	<b>UPSR:</b>2A 3B 1C<br>
+
+    </p>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.6786027519074!2d103.09720547447101!3d1.8584492597310622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d05ea0dbb6a9a1%3A0xf9eeb2538bd49572!2sSekolah%20Menengah%20Islam%20At-Tahfiz%20Parit%20Raja!5e1!3m2!1sen!2smy!4v1765805719028!5m2!1sen!2smy" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	
+	<img src="srit.png" alt="srit" width="400" height="350">
+
+
+    <h3>Secondary School</h3>
+    <p>
+	<b>Place:</b>SMK SERI GADING<br>
+	<b>Form 1 - 3:</b>Religous stream (ARABIC)<br>
+	<b>Form 4 - 5: </b> Add Science stream<br>
+	<b>SPM:</b> 6A <br>
+    </p>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3608.693613817017!2d103.04814277447106!3d1.8510894597607748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d0596f5cb1a4f7%3A0xe3da63914a9bb041!2sSMK%20Seri%20Gading!5e1!3m2!1sen!2smy!4v1765806696400!5m2!1sen!2smy" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	<img src="sega.png" alt="sega" width="400" height="350">
+
+
+    <h3>Higher Education</h3>
+    <p>
+        <b>Place:</b>Universiti Teknologi MARA (UiTM) CAMPUS SEGAMAT<br>
+	<b>Course:</b>DIPLOMA IN INFORMATION MANAGEMENT (SI110)<br>
+	<b>Years:</b> 2023 - 2026<br>
+	<b>Semesters:</b> 5 semesters<br>
+
+    </p>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.174295363356!2d102.72672767447042!3d2.487969756862142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ce2c6ce929a871%3A0xc0dfa5fe6922a589!2sUiTM%20Cawangan%20Johor%2C%20Kampus%20Segamat!5e1!3m2!1sen!2smy!4v1765807128995!5m2!1sen!2smy" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+	<img src="uitmsegamat.png" alt="uitmsegamat" width="400" height="350">
+
+    <h4>GRATITUDES TO ALL TEACHERS </h4>
+    <p>
+<video width="800" height="450" autoplay>
+  <source src="terimakasihcg.mp4" type="video/mp4">
+
+  Your browser does not support HTML video.
+</video>
+    </p>
+
+
+
+
+
+
+
+</div>
+</div>
+
+<footer>
+    Copyright © 2025 RASHNAZIEM — All Rights Reserved.
+</footer>
+
+</body>
+</html>
